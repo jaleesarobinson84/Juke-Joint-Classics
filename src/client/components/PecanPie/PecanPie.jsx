@@ -1,4 +1,3 @@
-// PecanPie.jsx
 import React from "react";
 
 const PecanPie = () => {
