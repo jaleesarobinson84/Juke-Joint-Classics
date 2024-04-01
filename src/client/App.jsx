@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import entreeList from "./components/entreeList";
-import dessertList from "./components/dessertList";
 
 
 function App() {
@@ -9,9 +7,6 @@ function App() {
 
   return (
     <div className="App">
-
-   <entreeList />
-   <dessertList />
   
     </div>
   );
