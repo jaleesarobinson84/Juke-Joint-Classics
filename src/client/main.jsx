@@ -7,9 +7,9 @@ import App from "./App";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // Layout/Components Imports
-import dessertList from "./components/views/dessertList";
-import entreeList from "./components/views/entreeList";
-import mealList from "./components/views/mealList" 
+import dessertList from "./components/dessertList";
+import entreeList from "./components/entreeList";
+import mealList from "./components/mealList" 
 
 // Routes
 
