@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import entreeList from "./views/layouts/entreeList";
-import dessertList from "./views/layouts/dessertList";
+import entreeList from "./components/views/entreeList";
+import dessertList from "./components/views/dessertList";
 
 
 function App() {
