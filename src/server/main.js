@@ -1,8 +1,8 @@
 import express from "express";
 import ViteExpress from "vite-express";
-import mongoose from 'mongoose';
 
-
+// Configurations
+// require('dotenv').config();
 const app = express();
 // // mongoose
 // const mongoose = require('mongoose');
@@ -10,10 +10,13 @@ const app = express();
 const uri = 'mongodb://localhost:27017/mydatabase';
 
 
-app.get("/hello", (req, res) => {
-  res.send("Hello Vite + React!");
+
+// routes
+app.get("", (req, res) => {
+  res.send("Running");
 });
 
+// server run
 ViteExpress.listen(app, 3000, () =>
   console.log("Server is listening on port 3000..."),
 );
