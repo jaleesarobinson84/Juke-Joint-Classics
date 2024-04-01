@@ -9,10 +9,6 @@ const app = express();
 // Connection URL
 const uri = 'mongodb://localhost:27017/mydatabase';
 
-// // mongoose
-// const mongoose = require('mongoose');
-// Connection URL
-const uri = 'mongodb://localhost:27017/mydatabase';
 
 
 // routes
