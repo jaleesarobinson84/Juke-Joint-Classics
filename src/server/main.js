@@ -2,9 +2,6 @@ import express from "express";
 import ViteExpress from "vite-express";
 import mongoose from 'mongoose';
 
-
-
-
 // Configurations
 // require('dotenv').config();
 const app = express();
@@ -12,10 +9,6 @@ const app = express();
 // const mongoose = require('mongoose');
 // Connection URL
 const uri = 'mongodb://localhost:27017/mydatabase';
-
-
-// Middleware
-
 
 
 // routes
