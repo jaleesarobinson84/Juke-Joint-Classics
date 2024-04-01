@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-
+import Navbar from "./components/Navbar"
 
 
 
@@ -12,24 +12,21 @@ function App() {
   return (
     
     <div className="App">
-      <navbar>
-        
-      </navbar>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Juke Joint Classics</h1>
-      <div className="card">
+      <Navbar /> 
+      <h1>Welcome</h1>
+      <div className="card">  
       <img src="https://tse3.mm.bing.net/th?id=OIP.kCM-JMMQ265y2zElmG7mlwHaFj&pid=Api&P=0&h=220"/>
-      </div>
-      <p className="read-the-docs">
-        Feeding your Soul with these Southern Home Cooking Recipes!
+      <h1>Juke Joint Classics</h1>
+      <p className="img-content">
+      "Welcome to the ultimate party feast, where each savory bite is a symphony and every sip is a sensational melody! Get ready to groove with our menu, where flavor meets rhythm and every dish dances on your palate to the beat of the music!"
+
+
+
+
+
+
       </p>
+    </div>
     </div>
   );
 }
