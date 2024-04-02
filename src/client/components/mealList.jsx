@@ -1,39 +1,38 @@
 import React from "react";
 
 function mealList() {
-    return (
-      <div class="row row-cols-1 row-cols-md-3">
-      <div class="col">
-        <div class="card">
-          <img src="https://fakeimg.pl/600x400" class="card-img-top" alt="banana pudding"/>
-          <div class="card-body">
-            <h5 class="card-title">Turkey Wings Meal</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+  return (
+    <div class="row row-cols-1 row-cols-sm-3">
+    <div class="col">
+      <div class="meal-card">
+      <p class="meal-card-text">"Infamous 'Itis' Meal"</p>
+        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="turkey wings"/>
+        <div class="meal-card-body">
+          <h5 class="meal-card-title">Turkey Wings, Rice and Gravy, and Green Beans, slice of sweet potato pie</h5>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://fakeimg.pl/600x400" class="card-img-top" alt="rice and gravy"/>
-          <div class="card-body">
-            <h5 class="card-title">Fried Catfish Meal</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
+    </div>
+    <div class="col">
+      <div class="meal-card">
+      <p class="meal-card-text">"Friday Fish Fry Special"</p>
+        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <div class="meal-card-body">
+          <h5 class="meal-card-title">Fried Catfish, black eyed peas and collard greens with banana pudding</h5>
         </div>
       </div>
-      <div class="col">
-        <div class="card">
-          <img src="https://fakeimg.pl/600x400" class="card-img-top" alt="green beans"/>
-          <div class="card-body">
-            <h5 class="card-title">Fried Chicken Meal</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-          </div>
+    </div>
+    <div class="col">
+      <div class="meal-card">
+      <p class="meal-card-text">"Grandmomma's Sunday Dinner"</p>
+        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="green beans"/>
+        <div class="meal-card-body">
+          <h5 class="meal-card-title">Fried Chicken, Macaroni and Cheese, collard greens, slice of pecan pie</h5>
         </div>
       </div>
-        </div>  
-  )
+    </div>
+  </div>   
+    )
   }
-    
   
 
 
@@ -42,4 +41,4 @@ function mealList() {
 
 
 
-export default mealListList
+export default mealList

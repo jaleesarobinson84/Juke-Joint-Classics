@@ -3,8 +3,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// Bootstrap CSS
-import "bootstrap/dist/css/bootstrap.min.css";
 
 // Layout/Components Imports
 import dessertList from "./components/dessertList";
