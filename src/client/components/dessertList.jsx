@@ -1,4 +1,6 @@
-import React from "react";
+import sweetPotato from "../assets/sweetPotato.jpg";
+import pecanPie from "../assets/pecanPie.jpg";
+import bananaPudding from "../assets/bananaPudding.jpg";
 
 function dessertList() {
   return (
@@ -6,7 +8,7 @@ function dessertList() {
     <div class="col">
       <div class="dessert-card">
       <p class="dessert-card-text">"Can't Resist This All Time Classic"</p>
-        <img src="" alt="sweet potato" />
+        <img src={sweetPotato} alt="sweet potato" />
         <div class="dessert-card-body">
           <h5 class="dessert-card-title">Sweet Potato Pie</h5>
           <p class="dessert-card-text">Sweet Potato Pie Ingredients
@@ -29,7 +31,7 @@ Make the Sweet Potato Pie Filling. Heat oven to 350º F. Mash the peeled sweet p
     <div class="col">
       <div class="dessert-card">
       <p class="dessert-card-text">"Make You Wanna Slap Yo' momma"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="pecan pie" />
+        <img src={pecanPie} class="card-img-top" alt="pecan pie" />
         <div class="dessert-card-body">
           <h5 class="dessert-card-title">Pecan Pie</h5>
           <p class="dessert-card-text">Grab These Ingredients
@@ -47,7 +49,7 @@ Cinnamon: Cinnamon adds an extra layer of flavor! I don’t see many pecan pies 
     <div class="col">
       <div class="dessert-card">
       <p class="dessert-card-text">"Made with Soul"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="Banana pudding" />
+        <img src={bananaPudding} class="card-img-top" alt="Banana pudding" />
         <div class="dessert-card-body">
           <h5 class="dessert-card-title">Banana Pudding</h5>
           <p class="dessert-card-text">

@@ -1,4 +1,13 @@
 import React from "react";
+import turkeyWings from "../assets/turkeyWings.jpg";
+import friedCatfish from "../assets/friedCatfish.jpg";
+import friedChicken from "../assets/friedChicken.jpg";
+import blackPeas from "../assets/blackPeas.jpg";
+import candiedYams from "../assets/candiedYams.jpg";
+import collardGreens from "../assets/collardGreens.jpg";
+import greenBeans from "../assets/greenBeans.jpg";
+import macCheese from "../assets/macCheese.jpeg";
+import riceGravy from "../assets/riceGravy.jpeg"
 
 function entreeList() {
   return (
@@ -6,7 +15,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"Big Momma's Special"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="turkey wings"/>
+        <img src={turkeyWings} class="card-img-top" alt="turkey wings"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Turkey Wings</h5>
           <p class="entree-card-text">How To Make Baked Turkey Wings
@@ -21,7 +30,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"Auntie's Secret Dish"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={friedCatfish} class="card-img-top" alt="fried catfish"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Fried Catfish</h5>
           <p class="entree-card-text">Ingredients
@@ -48,7 +57,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">Momma's Heart and Soul</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="green beans"/>
+        <img src={friedChicken} class="card-img-top" alt="fried chicken"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Fried Chicken</h5>
           <p class="entree-card-text">4 - 5 lb whole chicken cut into 8 pieces( or 4-5 lbs of chicken parts)
@@ -84,7 +93,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"Good Luck Charm"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={blackPeas} class="card-img-top" alt="black eye peas"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Black Eyed Peas</h5>
           <p class="entree-card-text">INGREDIENTS
@@ -101,7 +110,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"All In One"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={riceGravy} class="card-img-top" alt="rice and gravy"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Rice & Gravy</h5>
           <p class="entree-card-text">Ingredients:
@@ -121,7 +130,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"Pot Liquor Secret"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={collardGreens} class="card-img-top" alt="collard greens"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Collard Greens</h5>
           <p class="entree-card-text">Ingredients:
@@ -138,7 +147,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">Grandmomma's Way Like No Other</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={macCheese} class="card-img-top" alt="mac and cheese"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Macaroni and Cheese</h5>
           <p class="entree-card-text">ngredients
@@ -159,7 +168,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"No Marshmallows In This Dish"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={candiedYams} class="card-img-top" alt="candied yams"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Candied Yams</h5>
           <p class="entree-card-text">Sweet potatoes: The main ingredient for this dish are sweet potatoes. When buying sweet potatoes, make sure you choose medium-large-sized sweet potatoes that are firm and without bruises or cracks.
@@ -177,7 +186,7 @@ function entreeList() {
     <div class="col">
       <div class="entree-card">
       <p class="entree-card-text">"No Basic Flavor Here"</p>
-        <img src="https://fakeimg.pl/400x300" class="card-img-top" alt="rice and gravy"/>
+        <img src={greenBeans} class="card-img-top" alt="green beans"/>
         <div class="entree-card-body">
           <h5 class="entree-card-title">Southern Green Beans</h5>
           <p class="entree-card-text">Ingredients
