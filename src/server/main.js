@@ -1,32 +1,48 @@
 import express from "express";
 import ViteExpress from "vite-express";
+import mongoose from "mongoose";
+import Dessert from "./models/dessert";
+import Entree from "./models/entree";
+import Meal from "./models/meal";
+import dessertRoutes from "./Routes/dessertRoutes";
+import entreeRoutes from "./Routes/entreeRoutes";
+import mealRoutes from "./Routes/mealRoutes";
 
-// Configurations
-// require('dotenv').config();
-const app = express();
-// // mongoose
-// const mongoose = require('mongoose');
-// Connection URL
+// MongoDB Connection
 const uri = 'mongodb://localhost:27017/mydatabase';
 
+// Create Express app
+const app = express();
+app.use(express.json()); // Middleware to parse JSON bodies
 
+// Connect to MongoDB
+async function connectToDB() {
+  try {
+    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('Connected to MongoDB');
+  } catch (error) {
+    console.error('Error connecting to MongoDB:', error.message);
+  }
+}
 
-// routes
-app.get("", (req, res) => {
+// Define Routes
+app.get("/", (req, res) => {
   res.send("Running");
 });
 
-// server run
-ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000..."),
-);
+// Use Dessert routes
+app.use("/desserts", dessertRoutes);
 
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => {
-    console.log('Connected to MongoDB');
-    // Continue with your application logic here
-  })
-  .catch(error => {
-    console.error('Error connecting to MongoDB:', error.message);
-  });
+// Use Entree routes
+app.use("/entrees", entreeRoutes);
 
+// Use Meal routes
+app.use("/meals", mealRoutes);
+
+// Start Server
+const port = 3000;
+connectToDB().then(() => {
+  ViteExpress.listen(app, port, () =>
+    console.log(`Server is listening on port ${port}...`)
+  );
+});
