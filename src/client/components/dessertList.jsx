@@ -6,7 +6,7 @@ function dessertList() {
     <div class="col">
       <div class="dessert-card">
       <p class="dessert-card-text">"Can't Resist This All Time Classic"</p>
-        <img src="https://fakeimg.pl/400x300" alt="sweet potato" />
+        <img src="" alt="sweet potato" />
         <div class="dessert-card-body">
           <h5 class="dessert-card-title">Sweet Potato Pie</h5>
           <p class="dessert-card-text">Sweet Potato Pie Ingredients
