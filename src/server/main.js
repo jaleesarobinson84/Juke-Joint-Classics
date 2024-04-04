@@ -9,7 +9,7 @@ import entreeRoutes from "./Routes/entreeRoutes";
 import mealRoutes from "./Routes/mealRoutes";
 
 // MongoDB Connection
-const uri = 'mongodb://localhost:27017/mydatabase';
+const uri = 'mongodb://localhost:3000/mydatabase';
 
 // Create Express app
 const app = express();
