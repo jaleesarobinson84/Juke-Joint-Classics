@@ -40,3 +40,82 @@
 .imgContent {
   color: maroon;
 }
+
+/* dessert.jsx, meal.jsx, entree.jsx imgs */
+.card-img-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42%;
+
+}
+
+/* dessert.js  */
+.dessert-card {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.dessert-card:hover {
+  border: 1px solid #430b0b;
+}
+
+.dessert-card-text {
+  font-size: large;
+}
+
+
+.dessert-card-title {
+  padding: 15px;
+  text-align: center;
+}
+
+.dessert-card-ingredients, .dessert-card-instructions {
+  text-align: center;
+}
+
+/* entree.js */
+.entree-card {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.entree-card:hover {
+  border: 1px solid #430b0b;
+}
+
+.entree-card-text {
+  font-size: large;
+}
+
+.entree-card-ingredients, .entree-card-instructions {
+  text-align: center;
+}
+
+.entree-card-title {
+  padding: 15px;
+  text-align: center;
+}
+
+.meal-card {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+
+.meal-card:hover {
+  border: 1px solid #430b0b;
+}
+
+.meal-card-text {
+  font-size: large;
+  text-align: center;
+}
+
+
+.meal-card-title {
+  padding: 15px;
+  text-align: center;
+}
