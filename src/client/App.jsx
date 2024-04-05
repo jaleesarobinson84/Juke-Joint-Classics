@@ -1,5 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import "./App.css";
 import Navbar from "./components/Navbar"
 
@@ -20,7 +20,15 @@ function App() {
       <p className="img-content">
       "Welcome to the ultimate party feast, where each savory bite is a symphony and every sip is a sensational melody! Get ready to groove with our menu, where flavor meets rhythm and every dish dances on your palate to the beat of the music!"
 
-
+<Router>
+  <switch>
+    <Route path="/">
+      <DessertList />
+      <EntreeList />
+      <MediaList />
+    </Route>
+  </switch>
+</Router>
 
 
 

@@ -8,8 +8,9 @@ import App from "./App";
 import dessertList from "./components/dessertList";
 import entreeList from "./components/entreeList";
 import mealList from "./components/mealList" 
+import Navbar from "./components/Navbar";
 
-// Routes
+
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
