@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from  "mongoose"
 
 const mealSchema = new mongoose.Schema({
   name: String,
@@ -8,4 +8,4 @@ const mealSchema = new mongoose.Schema({
 
 const meal = mongoose.model('meal', mealSchema);
 
-module.exports = meal;
+export default meal;

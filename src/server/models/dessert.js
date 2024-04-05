@@ -1,4 +1,4 @@
-// models/dessert.model.js
+
 import mongoose from 'mongoose';
 
 

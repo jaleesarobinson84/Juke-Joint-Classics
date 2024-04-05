@@ -1,14 +1,13 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import mongoose from "mongoose";
-import entree from "./controllers/entreecontroller";
-
-
-
-
+import entreemodel from "./controllers/entreecontroller.js";
+import dessertmodel from "./controllers/dessertcontroller.js";
+import mealmodel from "./controllers/mealcontroller.js";
+import dotenv from "dotenv";
 
 // Configurations
-// dotenv.config();
+ dotenv.config();
 const app = express();
 app.use(express.json());
 
@@ -18,15 +17,10 @@ app.use(express.urlencoded({ extended: false }))
 
 // ROUTES
 // entree
-// import entrees_Controller from "./controllers/entrees_controller"
-app.use('/entree', entree)
-// dessert
-// import dessertController from "./controllers/desserts_controller"
-// app.use('/dessert')
+app.use('/entree', entreemodel)
+app.use('/dessert', dessertmodel)
+app.use('/meal', mealmodel)
 
-// meal
-// import mealController from "./controllers/meals_controller"
-// app.use('/meal')
 
 
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
