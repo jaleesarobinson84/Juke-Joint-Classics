@@ -11,7 +11,7 @@ import riceGravy from "../assets/riceGravy.jpg"
 
 function entreeList() {
   return (
-    <div className="row row-cols-1 row-cols-sm-3">
+    <div className="clearfix">
     <div className="col">
       <div className="entree-card">
       <p className="entree-card-text">"Big Momma's Special"</p>
@@ -33,7 +33,7 @@ function entreeList() {
         <img src={friedCatfish} className="card-img-top" alt="fried catfish"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Fried Catfish</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
   6 pounds catfish fillets
   1 cup buttermilk
   4 cups vegetable oil or lard for frying
@@ -43,7 +43,7 @@ function entreeList() {
   2 tablespoons Cajun Seasoning used: Slap Ya Mama Cajun Seasoning
   1 teaspoon garlic powder or granulated garlic
   2 teaspoons ground black pepper
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Rinse fish fillets under cold water, cut into 2-inch wide strips; place in a large bowl.
   Cover fish with buttermilk and mix with hands; cover and refrigerate: let soak for 30 minutes to an hour before frying.
   In a large zip top bag, combine flour, cornmeal, cajun seasoning, garlic powder and black pepper.
@@ -51,7 +51,7 @@ function entreeList() {
   Meanwhile drain off buttermilk from the fish. Drop 3 to 4 pieces into the cornmeal mixture and coat each piece well.
   Fry fish pieces for 3 to 4 minutes per side, or until golden brown.
   Remove from hot oil and drain on paper towels or brown paper bags.</p>
-  Serve hot with tarter sauce. </p>
+  Serve hot with tarter sauce or hot sauce. </p>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@ function entreeList() {
         <img src={friedChicken} className="card-img-top" alt="fried chicken"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Fried Chicken</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
             4 - 5 lb whole chicken cut into 8 pieces( or 4-5 lbs of chicken parts)
           1/2 cup mild hot sauce I use Frank's Red Hot for this recipe
   2 1/4 cups all purpose flour
@@ -73,7 +73,7 @@ function entreeList() {
   1 tbsp garlic powder
   1 tsp cayenne pepper
   4 cups of peanut oil for frying Make sure that the chicken is nice and clean.
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>: 
   Combine 8 cups cold water, 2 tbsp salt, and 4 tbsp sugar.
   Stir until the salt and sugar dissolve.
   Pour the brine ( sugar/salt/water) into the bowl or container with the chicken.
@@ -99,11 +99,11 @@ function entreeList() {
         <img src={blackPeas} className="card-img-top" alt="black eye peas"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Black Eyed Peas</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>: 
   1(16 ounce) package dried black-eyed peas, 6 cups water, 1 medium onion, chopped,2 cloves garlic, minced
   1 teaspoon salt, 1⁄2teaspoon black pepper, 1 teaspoon sugar, 1 ham hocks or 2 cups cooked ham, cut into small cubes
   1 -2 jalapeno pepper, seeds removed and chopped</p>
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Sort and wash peas; place in a large Dutch oven.
   Add remaining ingredients and bring to a boil.
   Cover, reduce heat and simmer for 1- 1 1/2 hours, or until peas are tender.</p>
@@ -116,7 +116,7 @@ function entreeList() {
         <img src={riceGravy} className="card-img-top" alt="rice and gravy"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Rice & Gravy</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
           1 ¼ -1 ½ pounds top sirloin cut into 1-inch pieces
 Salt and Pepper to taste
 1 ½ tablespoons vegetable oil divided
@@ -130,7 +130,7 @@ Salt and Pepper to taste
 1 tablespoon Worcestershire sauce
 2 tablespoons finely chopped parsley
 Cooked rice for serving</p>
-<p className="entree-card-instructions"><b>Instructions</b>
+<p className="entree-card-instructions"><b>Instructions</b>:
 Remove beef from fridge 30 minutes prior to cooking. Pat dry. Season with salt and pepper.
 In large Dutch oven, heat 1 tablespoon of vegetable oil over medium high heat. Add in half of the pieces of beef. Sear for about 1 minute, then turn on another side and continue cooking for 1-2 minutes, getting deep brown color on the beef. Remove beef from pan and set aside.
 Add ½ tablespoon oil to pan repeat with remaining beef tips.
@@ -148,7 +148,7 @@ Stir in parsley and serve over cooked rice.</p>
         <img src={collardGreens} className="card-img-top" alt="collard greens"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Collard Greens</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
   Fresh Collard Greens Purchase from the Farmers Market or Organic if possible. Make sure that the leaves look healthy, green, and full.
   Onion- Yellow onions will add flavor to the greens.
   Garlic Garlic will compliment the flavor of the onion and greens.
@@ -159,7 +159,7 @@ Stir in parsley and serve over cooked rice.</p>
   These seasonings will enhance the flavors of the finished greens. Resulting in a bold, 
   flavorful pot of savory collard greens that are smoky, slightly spicy, and a tad salty and vinegary! 
   Perfection!</p>
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Start by pulling and tearing greens away from stems. Take a hand full of greens, roll them up and cut the rolls horizontally into small pieces. We personally remove the stems but this is a personal decision.
 Next, add greens to empty clean sink and wash them removing all grit, sand and debris thoroughly with cold water until water becomes clear.
 Next rinse the ham hock very well then add to a large pot along with enough water to fully submerge the ham hock then cover with a lid. Cook over medium high heat for about 45 minutes or until ham hock is near being tender.
@@ -175,14 +175,14 @@ Add along the rest of the ingredients to the pot and cook while covered for at l
         <img src={macCheese} className="card-img-top" alt="mac and cheese"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Macaroni and Cheese</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
   8 to 10 ounces elbow macaroni, ½ cup whole milk
   1 (12-ounce) can evaporated milk, 2 eggs, lightly beaten, 1½ teaspoons white pepper
   1½ teaspoons granulated sugar, ½ teaspoon salt or to taste, ½ cup (1 stick) butter, cut into small pieces
   2 tablespoons sour cream, ½ pound Velveeta, cut into small chunks
   8 ounces shredded Colby-Jack cheese or 4 ounces Colby and 4 ounces Monterey Jack
   4 ounces shredded sharp cheddar cheese, 1 cup shredded mild cheddar cheese</p>
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Preheat oven to 350º. Bring large pot of water to boil and then salt generously. Cook macaroni just shy of package directions, al dente. Drain well and place in 9" by 13" baking dish or pan.
   In same pasta pot, whisk together whole milk, evaporated milk, eggs, salt, pepper and sugar until combined. Pour mixture over cooked macaroni in pan.
   Add butter, sour cream, Velveeta, Colby-Jack and sharp cheddar cheeses. Stir to combine well and top evenly with shredded mild cheddar.
@@ -197,7 +197,7 @@ Add along the rest of the ingredients to the pot and cook while covered for at l
         <img src={candiedYams} className="card-img-top" alt="candied yams"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Candied Yams</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
           Sweet potatoes: The main ingredient for this dish are sweet potatoes. When buying sweet potatoes, make sure you choose medium-large-sized sweet potatoes that are firm and without bruises or cracks.
   Butter: Unsalted butter sets the base for the candied glaze and it gives these candied yams so much flavor.
   Granulated sugar: Granulated sugar works best for this recipe. It adds the sweetness required for candied yams.  Brown sugar works also but can make the sauce stickier.
@@ -208,7 +208,7 @@ Add along the rest of the ingredients to the pot and cook while covered for at l
   Real maple: Real maple has a beautiful aroma. It has a distinct caramel-like and sweet flavor.
   Vanilla extract: Vanilla extract adds a depth of flavor. However, it is an optional ingredient, 
   and you can skip it if you don’t like it or have any on hand.</p>
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Scrub, peel and slice your yams into 1/2 inch rounds. In a medium pot over medium high heat, combine the sweet potatoes and the rest of the ingredients. Stir the sweet potatoes until coated in the sugar and butter mixture.
 Let it come to a boil. Cover then simmer for about 50 minutes or until the yams are nice and tender when slightly pierced with the tines of a fork or taste. If the yam is still a bit hard. Let it cook a bit longer. 
 Remove the top then set stove to medium. Let the cooking liquid come to a boil. Stirring occasionally until the cooking liquid reduces about 10 minute or until the syrup coats the yams. Remove the pot with the candied yams from the stove and place them into 
@@ -222,13 +222,13 @@ the oven until you are ready to serve them. These taste best warm. </p>
         <img src={greenBeans} className="card-img-top" alt="green beans"/>
         <div className="entree-card-body">
           <h5 className="entree-card-title">Southern Green Beans</h5>
-          <p className="entree-card-ingredients"><b>Ingredients</b>
+          <p className="entree-card-ingredients"><b>Ingredients</b>:
   6 slices thick cut bacon ( cut into 1/2 inch pieces), 1 medium yellow onion (diced, about 1 cup)
   3 cloves garlic (minced), 1/2 teaspoon fine sea salt, 1/2 teaspoon ground black pepper
   1/4 teaspoon crushed red pepper flakes, 1 1/2 pounds baby potatoes (quartered)
   1 pound green beans (washed with ends trimmed), 4 Tablespoons butter (divided)
   4 cups chicken broth</p>
-  <p className="entree-card-instructions"><b>Instructions</b>
+  <p className="entree-card-instructions"><b>Instructions</b>:
   Lightly spray the bottom of a large dutch oven with cooking spray, then spread the bacon slices over the bottom of the pot in an even layer. Turn the heat to medium and cook the bacon until crispy (about 8-10 minutes). Remove the bacon from the pot using a slotted spoon. Leave about 2 Tablespoons of bacon grease in the pot, and discard the rest.
   Add the diced onion to the pot and cook it in the bacon grease until the onion is soft and translucent (about 5 minutes).
   Add the minced garlic and red pepper flakes to the onion and cook until aromatic (30-60 seconds).

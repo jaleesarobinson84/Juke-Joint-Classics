@@ -11,6 +11,7 @@
   
 }
 
+
 /* image border */
 .card {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
@@ -46,7 +47,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 42%;
+  width: 60%;
 
 }
 
@@ -63,6 +64,8 @@
 
 .dessert-card-text {
   font-size: large;
+  font-weight: 400;
+
 }
 
 
@@ -77,7 +80,7 @@
 
 /* entree.js */
 .entree-card {
-  margin: 5px;
+  margin: px;
   border: 1px solid #ccc;
   float: left;
 }
@@ -88,6 +91,7 @@
 
 .entree-card-text {
   font-size: large;
+  font-weight: 400;
 }
 
 .entree-card-ingredients, .entree-card-instructions {
@@ -100,7 +104,7 @@
 }
 
 .meal-card {
-  margin: 5px;
+  margin: 10px;
   border: 1px solid #ccc;
   float: left;
 }
@@ -111,7 +115,7 @@
 
 .meal-card-text {
   font-size: large;
-  text-align: center;
+  font-weight: 400;
 }
 
 
