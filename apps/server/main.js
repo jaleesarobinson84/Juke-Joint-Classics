@@ -4,10 +4,10 @@ import mongoose from "mongoose";
 import entreemodel from "./controllers/entreecontroller.js";
 import dessertmodel from "./controllers/dessertcontroller.js";
 import mealmodel from "./controllers/mealcontroller.js";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
 // Configurations
- dotenv.config();
+// dotenv.config();
 const app = express();
 app.use(express.json());
 
@@ -21,11 +21,8 @@ app.use('/entree', entreemodel)
 app.use('/dessert', dessertmodel)
 app.use('/meal', mealmodel)
 
-
-
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connection.on('connected', () => console.log('Connected to MongoDB'));
-mongoose.connection.on('error', (err) => console.log(err));
+// Connect to MongoDB
+mongoose.connect('mongodb://localhost:27017/juke_joint', { useNewUrlParser: true, useUnifiedTopology: true, });
 
 // server run
 ViteExpress.listen(app, 3000, () =>
