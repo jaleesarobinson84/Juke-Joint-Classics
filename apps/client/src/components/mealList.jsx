@@ -4,7 +4,7 @@ import catfishMeal from "../assets/catfishMeal.jpg";
 
 function mealList() {
   return (
-    <div className="row row-cols-1 row-cols-sm-3">
+    <div className="clearfix">
     <div className="col">
       <div className="meal-card">
       <p className="meal-card-text">"Infamous 'Itis' Meal"</p>

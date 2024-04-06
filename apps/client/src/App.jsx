@@ -7,7 +7,6 @@ import Navbar from "./components/Navbar"
 import DessertList from "./components/dessertList";
 import EntreeList from "./components/entreeList";
 import MealList from "./components/mealList" 
-// import Navbar from "./components/Navbar";
 
 const HomePage = () => {
   return (<><h1>Welcome</h1>
