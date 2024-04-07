@@ -80,7 +80,7 @@
 
 /* entree.js */
 .entree-card {
-  margin: px;
+  margin: 5px;
   border: 1px solid #ccc;
   float: left;
 }
@@ -104,7 +104,7 @@
 }
 
 .meal-card {
-  margin: 10px;
+  margin: 5px;
   border: 1px solid #ccc;
   float: left;
 }
