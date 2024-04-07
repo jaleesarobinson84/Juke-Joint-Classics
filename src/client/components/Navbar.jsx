@@ -1,32 +1,32 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
     <div>
-    <nav class="navbar navbar-expand-lg jsutify-content-center">
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg justify-content-center">
+  <div className="container-fluid">
+    <Link to='/'>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon">Home</span>
     </button>
-    <a class="navbar-brand justify-content-center" href="#">Menu</a>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <li class="nav-item">
-          <a class="nav-link" aria-current="true" href="#">Entrees</a>
+    </Link>
+    {/* <a className="navbar-brand justify-content-center" href="#">Menu</a> */}
+    <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link to='/entrees' aria-current="true">Entrees</Link>
         </li>
-
-        <li class="nav-item">
-          <a class="nav-link" aria-current="true" href="#">Desserts</a>
+        <li className="nav-item">
+          <Link to='/desserts' aria-current="true">Desserts</Link>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link" aria-current="true" href="#">Meals</a>
+        <li className="nav-item">
+          <Link to='/meals' aria-current="true">Meals</Link>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-        <button type="button" class="btn btn-warning">Enter</button>
+      <form className="d-flex" role="search">
+        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <button type="button" className="btn btn-warning">Enter</button>
       </form>
     </div>
   </div>
@@ -34,5 +34,4 @@ function Navbar() {
   </div>
   )
 }
-
 export default Navbar
