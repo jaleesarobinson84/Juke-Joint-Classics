@@ -1,35 +1,40 @@
 import express from "express";
 import ViteExpress from "vite-express";
 import mongoose from "mongoose";
-import entreemodel from "./controllers/entreecontroller.js";
-import dessertmodel from "./controllers/dessertcontroller.js";
-import mealmodel from "./controllers/mealcontroller.js";
 import dotenv from "dotenv";
 
+// Import controllers
+import entreeController from "./controllers/entreecontroller.js";
+import dessertController from "./controllers/dessertcontroller.js";
+import mealController from "./controllers/mealcontroller.js";
+
+// Import models
+import entreeModel from "./models/entree.js";
+import dessertModel from "./models/dessert.js";
+import mealModel from "./models/meal.js";
+
 // Configurations
- dotenv.config();
+dotenv.config();
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
 
-
-// Middleware
-app.use(express.urlencoded({ extended: false }))
-
-// ROUTES
-// entree
-app.use('/entree', entreemodel)
-app.use('/dessert', dessertmodel)
-app.use('/meal', mealmodel)
-
-
-
+// Connect to MongoDB
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => console.log('Connected to MongoDB'));
 mongoose.connection.on('error', (err) => console.log(err));
 
-// server run
+// ROUTES
+// Entree routes
+app.use('/entree', entreeController);
+// Dessert routes
+app.use('/dessert', dessertController);
+// Meal routes
+app.use('/meal', mealController);
+
+// Start server
 ViteExpress.listen(app, 3000, () =>
-  console.log("Server is listening on port 3000..."),
+  console.log("Server is listening on port 3000...")
 );
 
 
