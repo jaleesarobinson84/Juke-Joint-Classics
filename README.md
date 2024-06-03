@@ -7,7 +7,7 @@ Juke Joint Project is a web application that showcases a collection of delicious
 - Saad:
   - Backend Developer.
   - Implemented backend functionality for handling database operations.
-  - Integrated MongoDB database for storing entrees and desserts data.
+  - Integrated MongoDB database for storing entrees and desserts data as well as the meals data.
 - Roy:
   - Frontend Developer.
   - Designed the user interface and implemented frontend components using React.js.

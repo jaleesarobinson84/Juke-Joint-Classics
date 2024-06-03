@@ -6,10 +6,11 @@ const mealSchema = new mongoose.Schema({
   description: String,
 });
 
-const meal = mongoose.model('meal', mealSchema);
+const Meal = mongoose.model('Meal', mealSchema); // Changed 'meal' to 'Meal' for naming convention
+export default Meal;
 
-// Define meal data
-const mealData = [
+// Adding meal data
+const meals = [
   {
     name: "Infamous 'Itis' Meal",
     image: "turkeyWings.jpg",
@@ -24,12 +25,15 @@ const mealData = [
     name: "Grandmomma's Sunday Dinner",
     image: "friedChicken.jpg",
     description: "Fried Chicken, Macaroni and Cheese, collard greens, slice of pecan pie",
-  },
+  }
 ];
 
-// Insert meal data into the database
-meal.insertMany(mealData)
-  .then(() => console.log('Meal data inserted successfully'))
-  .catch(err => console.error('Error inserting meal data:', err));
+// If you want to add these meals to your database
+Meal.insertMany(meals)
+  .then(() => {
+    console.log('Meals added successfully.');
+  })
+  .catch((err) => {
+    console.error('Error adding meals:', err);
+  });
 
-export default meal;

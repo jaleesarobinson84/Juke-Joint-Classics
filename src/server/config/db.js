@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
-const db =
-  "mongodb+srv://logrocket:Fwfz2nWH55E0VEQi@cluster1.dydb2rf.mongodb.net/juke_joint?retryWrites=true&w=majority";
+const db = "mongodb+srv://logrocket:Fwfz2nWH55E0VEQi@cluster1.dydb2rf.mongodb.net/juke_joint?retryWrites=true&w=majority";
 
 mongoose.set("strictQuery", true);
 
@@ -15,3 +14,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+

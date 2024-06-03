@@ -1,18 +1,3 @@
-import mongoose from "mongoose";
-
-const dessertSchema = new mongoose.Schema({
-  name: String,
-  image: String,
-  description: String,
-  title: String,
-  text: String,
-  ingredients: String,
-  instructions: String,
-});
-
-const dessert = mongoose.model('dessert', dessertSchema);
-
-// Define dessert data
 const dessertData = [
   {
     name: "Sweet Potato Pie",
@@ -76,5 +61,4 @@ dessert.insertMany(dessertData)
   .then(() => console.log('Dessert data inserted successfully'))
   .catch(err => console.error('Error inserting dessert data:', err));
 
-export default dessert;
  

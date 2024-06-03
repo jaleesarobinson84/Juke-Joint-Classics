@@ -9,9 +9,6 @@ import dessertController from "./controllers/dessertcontroller.js";
 import mealController from "./controllers/mealcontroller.js";
 
 // Import models
-import entreeModel from "./models/entree.js";
-import dessertModel from "./models/dessert.js";
-import mealModel from "./models/meal.js";
 
 // Configurations
 dotenv.config();
