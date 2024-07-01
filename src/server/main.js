@@ -35,3 +35,13 @@ ViteExpress.listen(app, 3000, () =>
 );
 
 
+// Use Meal routes
+app.use("/meals", mealRoutes);
+
+// Start Server
+const port = 3000;
+connectToDB().then(() => {
+  ViteExpress.listen(app, port, () =>
+    console.log(`Server is listening on port ${port}...`)
+  );
+});
